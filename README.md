@@ -75,14 +75,3 @@ Tested on: Minecraft Education 1.26.33 (Windows)
 
 [MIT](LICENSE)
 
----
-
-## 中身（Files）
-
-`resource_packs/educreatortools_mainRP/` が、リソースパックのフォルダそのものです。ビルドの道具は要りません。フォルダをそのまま `resource_packs` に置いても使えます。
-
-設定の画面を変えているのは `ui/settings_sections/general_section.json` だけです。
-
-- 教育版では、ボタン（`creator_button`）と欄（`creator_section`）が `"ignored": "$ignore_creator_section"` で隠されているので、`"ignored": false` にする
-- 欄の中のコンテンツログの欄には、さらに `"ignored": "$education_edition"` が付いているので、付いていないものに差し替える
-- 欄の中身は、教育版 1.26.33 と統合版 1.26.65 で同じ
