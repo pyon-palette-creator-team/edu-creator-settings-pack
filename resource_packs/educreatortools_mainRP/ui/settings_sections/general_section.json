@@ -1,0 +1,36 @@
+{
+  "namespace": "general_section",
+
+  // 教育版では、設定の「クリエイター」の欄が、左の一覧のボタンも中身も "ignored": "$ignore_creator_section" で隠されている。
+  // 欄の中身（コンテンツログ・スクリプトデバッガー・診断・ウォッチドッグなど）も、その文字（texts）も教育版のゲームにあるので、
+  // 隠すのをやめて、統合版と同じ「クリエイター」の欄として出す（2026-11-25。教育版 1.26.33 と統合版 1.26.65 で、欄の中身は同じ）。
+  // 前は、コンテンツログの欄だけを「一般」の欄の先頭に差し込んでいた（2026-11-23）。
+
+  // 左の一覧の「クリエイター」のボタン
+  "creator_button": {
+    "ignored": false
+  },
+
+  // 「クリエイター」の欄の中身
+  "creator_section": {
+    "ignored": false,
+    "modifications": [
+      // コンテンツログの欄には、教育版ではさらに "ignored": "$education_edition" が付いているので、付いていないものに差し替える。
+      // 欄の中の「履歴」のボタン（button.open_content_log_history）で、ログの履歴の画面が開く（2026-11-23 に教育版で確認）
+      {
+        "array_name": "controls",
+        "operation": "remove",
+        "control_name": "content_log_panel"
+      },
+      {
+        "array_name": "controls",
+        "operation": "insert_back",
+        "value": [
+          {
+            "educreatortools_content_log_panel@general_section.content_log_panel": {}
+          }
+        ]
+      }
+    ]
+  }
+}

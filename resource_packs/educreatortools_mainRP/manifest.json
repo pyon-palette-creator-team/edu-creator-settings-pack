@@ -1,0 +1,27 @@
+{
+	"format_version": 3,
+	"header": {
+		"name": "pack.name",
+		"description": "pack.description",
+		"uuid": "87d96ffa-fe1a-48c8-a9e7-1cb3a78a0183",
+		"version": "1.0.0",
+		"min_engine_version": "1.26.30"
+	},
+	"modules": [
+		{
+			"type": "resources",
+			"uuid": "b34eff51-3bc3-49f0-882e-e7588e7da6fe",
+			"version": "1.0.0"
+		}
+	],
+	"metadata": {
+		"authors": [
+			"Pyon Palette"
+		],
+		"generated_with": {
+			"bkit": [
+				"0.11.0"
+			]
+		}
+	}
+}

@@ -1,0 +1,7 @@
+# 公開するのは、リソースパックのフォルダと README・LICENSE だけ。
+# bkit の設定（package.json、addon.config.json、.vscode、CLAUDE.md など）は、この PC だけに置く
+/*
+!/.gitignore
+!/README.md
+!/LICENSE
+!/resource_packs/
